@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+<section class = "card__container">
+  <div class = "inputs__container">
+      <div class ="input__feature__container">
+        <div class ="input__header " id ="DayInputHeader">Day</div>
+          <input class ="date__input " placeholder="DD" id = "DayInput"></input>
+          <p class = "invalid__states invalidMessage " id="DayInputInvalidMessage">Must be a valid day</p>
+      </div>
+      <div class ="input__feature__container">
+        <div class ="input__header " id ="MonthInputHeader">Month</div>
+          <input class ="date__input " placeholder="MM" id = "MonthInput"></input>
+          <p class = "invalid__states invalidMessage"  id="MonthInputInvalidMessage">Must be a valid month</p>
+      </div>
+      <div class ="input__feature__container">
+        <div class ="input__header " id ="YearInputHeader">Year</div>
+          <input class ="date__input " placeholder="YYYY" id = "YearInput"></input>
+          <p class = "invalid__states invalidMessage" id="YearInputInvalidMessage">Must be in the past</p>
+      </div>
+  </div>
+  <div class ="divider__container"></div>
+  <button class ="divider__arrow" id ="enterButton" onclick= ValidateDates() ><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+  <div class ="date__wrapper">
+      <div class ="date__container">
+        <div class ="date__result" id = "yearResult">38</div>
+        <div class ="date__header">years</div>
+      </div>
+      <div class ="date__container">
+        <div class ="date__result" id = "monthResult">3</div>
+        <div class ="date__header">months</div>
+      </div>
+      <div class ="date__container">
+        <div class ="date__result" id = "dayResult">26</div>
+        <div class ="date__header">days</div>
+      </div>
+  </div>
+</section>
+<script rel="script.js" src="script.js"></script>
+</body>
+</html>
